@@ -1,0 +1,6 @@
+name: Elite's Vault
+version: '${version}'
+
+main: org.turbojax.elitesvault.ElitesVault
+api-version: '1.21.11'
+load: POSTWORLD
