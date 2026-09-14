@@ -1,4 +1,4 @@
-name: Elite's Vault
+name: ElitesVault
 version: '${version}'
 
 main: org.turbojax.elitesvault.ElitesVault

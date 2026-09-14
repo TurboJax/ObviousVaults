@@ -16,16 +16,13 @@ java {
     toolchain.languageVersion = JavaLanguageVersion.of(21)
 }
 
-tasks {
-    runServer {
-        minecraftVersion(libs.versions.minecraft.get())
-        jvmArgs("-Xms2G", "-Xmx2G")
-    }
+tasks.runServer {
+    minecraftVersion(libs.versions.minecraft.get())
+}
 
-    processResources {
-        val props = mapOf("version" to version)
-        filesMatching("plugin.yml") {
-            expand(props)
-        }
+tasks.processResources {
+    val props = mapOf("version" to version)
+    filesMatching("plugin.yml") {
+        expand(props)
     }
 }

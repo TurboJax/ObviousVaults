@@ -2,7 +2,7 @@
 paper-api = "1.21.11-R0.1-SNAPSHOT"
 minecraft = "1.21.11"
 
-run-paper = "3.0.2"
+run-paper = "3.1.0"
 
 [libraries]
 paper-api = { module = "io.papermc.paper:paper-api", version.ref = "paper-api" }
