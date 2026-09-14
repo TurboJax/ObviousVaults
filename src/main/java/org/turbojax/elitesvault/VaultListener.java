@@ -10,11 +10,11 @@ public class VaultListener implements Listener {
     @EventHandler
     public void onDispense(BlockDispenseLootEvent event) {
         if (!(event.getBlock().getState() instanceof Vault vault)) return;
-        ItemStack displayedItem = vault.getDisplayedItem();
+        ItemStack item = vault.getDisplayedItem();
 
         // Editing the loot
         var loot = event.getDispensedLoot();
-        loot.set(0, displayedItem);
+        loot.set(loot.size() - 1, item);
         event.setDispensedLoot(loot);
     }
 }
