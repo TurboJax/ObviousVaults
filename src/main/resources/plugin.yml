@@ -1,6 +1,6 @@
-name: ElitesVault
+name: ObviousVaults
 version: '${version}'
 
-main: org.turbojax.elitesvault.ElitesVault
+main: org.turbojax.obviousvaults.ObviousVaults
 api-version: '1.21.11'
 load: POSTWORLD

@@ -1,1 +1,1 @@
-rootProject.name = "elitesvault"
+rootProject.name = "obvious-vaults"
