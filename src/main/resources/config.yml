@@ -1,0 +1,4 @@
+dispense_shown_item: true
+usage_limit: 5
+ominous_usage_limit: 2
+show_usage_limit: true
