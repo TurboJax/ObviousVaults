@@ -4,3 +4,8 @@ version: '${version}'
 main: org.turbojax.obviousvaults.ObviousVaults
 api-version: '1.21.11'
 load: POSTWORLD
+
+permissions:
+  obviousvaults.reload:
+    description: Lets players use `/obviousvaults reload`
+    default: op
