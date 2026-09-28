@@ -6,10 +6,12 @@ plugins {
 repositories {
     mavenCentral()
     maven("https://repo.papermc.io/repository/maven-public/")
+    maven("https://maven.turbojax.org/releases")
 }
 
 dependencies {
     compileOnly(libs.paper.api)
+    compileOnly(libs.turbo.messages)
 }
 
 java {

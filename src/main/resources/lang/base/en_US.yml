@@ -1,0 +1,7 @@
+usage_limit: "<green>You have %uses% uses left."
+final_use: "<red>You feel this vault is empty..."
+help_message:
+  - "<aqua>/obviousvaults <gray>Usage:"
+  - "<white>/obviousvaults reload<gray>: Reloads the config."
+not_player: "<red>You must be a player to use this command."
+reload_success: "<green>Reloaded ObviousVaults!"
