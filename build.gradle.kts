@@ -1,5 +1,6 @@
 plugins {
     `java-library`
+    alias(libs.plugins.shadow)
     alias(libs.plugins.run.paper)
 }
 
@@ -11,7 +12,7 @@ repositories {
 
 dependencies {
     compileOnly(libs.paper.api)
-    compileOnly(libs.turbo.messages)
+    implementation(libs.turbo.messages)
 }
 
 java {
