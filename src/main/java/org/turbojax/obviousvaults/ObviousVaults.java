@@ -37,6 +37,7 @@ public final class ObviousVaults extends JavaPlugin implements Listener {
 
         // Setting up the message system
         Message.setLangDir(new File("plugins/ObviousVaults/lang"));
+        Message.loadBaseFiles(getClassLoader());
     }
 
     @Override
