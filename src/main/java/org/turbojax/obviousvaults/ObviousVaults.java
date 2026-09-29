@@ -28,8 +28,12 @@ public final class ObviousVaults extends JavaPlugin implements Listener {
     private final DataManager dataManager;
 
     public ObviousVaults() {
+        // Saving the default config
+        saveDefaultConfig();
+
         // Loading the DataManager
         this.dataManager = new YamlDataManager();
+        dataManager.load();
 
         // Setting up the message system
         Message.setLangDir(new File("plugins/ObviousVaults/lang"));
@@ -64,6 +68,7 @@ public final class ObviousVaults extends JavaPlugin implements Listener {
 
     @Override
     public void onDisable() {
+        dataManager.save();
         BlockDispenseLootEvent.getHandlerList().unregister((JavaPlugin) this);
     }
 
